@@ -54,4 +54,14 @@ a {
     background-position: top right;
     background-repeat: no-repeat;
   }
+  .resultContanier{
+    background-image: url(../img/result_right.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+  .readyContanier{
+    background-image: url(../img/readyimg.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
 }

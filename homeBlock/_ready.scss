@@ -18,8 +18,7 @@
 
     color: #012f34;
   }
-  &_btn{
-    
+  &_btn {
     width: 153px;
     height: 48px;
 
@@ -44,6 +43,28 @@
     &:hover {
       background-color: inherit;
       color: chocolate;
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .ready {
+    width: 90%;
+
+    &_title {
+      /* Ready to get started */
+
+      font-family: "Livvic";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 32px;
+      /* identical to box height, or 100% */
+
+      color: #012f34;
+    }
+    &_btn{
+      display: block;
     }
   }
 }

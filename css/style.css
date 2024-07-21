@@ -60,6 +60,16 @@ a {
     background-position: top right;
     background-repeat: no-repeat;
   }
+  .resultContanier {
+    background-image: url(../img/result_right.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+  .readyContanier {
+    background-image: url(../img/readyimg.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
 }
 .navbar {
   width: 1100px;
@@ -399,6 +409,55 @@ a {
   justify-content: center;
 }
 
+@media only screen and (max-width: 1100px) {
+  .result {
+    width: 90%;
+  }
+  .result_cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .result_text {
+    /* “The team perfectly */
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+    text-align: center;
+    color: #ffffff;
+  }
+  .result_title {
+    /* Delivering real resu */
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    /* or 100% */
+    text-align: center;
+    color: #ffffff;
+  }
+  .result_nicname {
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    text-align: center;
+    color: #79c8c7;
+  }
+  .result_bio {
+    font-family: "Livvic";
+    font-size: 13px;
+    line-height: 18px;
+    /* identical to box height, or 138% */
+    text-align: center;
+    color: #ffffff;
+  }
+}
 .ready {
   width: 1100px;
   display: flex;
@@ -439,6 +498,24 @@ a {
   color: chocolate;
 }
 
+@media only screen and (max-width: 1100px) {
+  .ready {
+    width: 90%;
+  }
+  .ready_title {
+    /* Ready to get started */
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    /* identical to box height, or 100% */
+    color: #012f34;
+  }
+  .ready_btn {
+    display: block;
+  }
+}
 .footer {
   width: 1100px;
   display: flex;
@@ -510,4 +587,20 @@ a {
   align-items: center;
   justify-content: center;
   gap: 30px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .footer {
+    width: 90%;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .footer_left {
+    justify-content: start;
+    align-items: center;
+  }
+  .footer_right {
+    justify-content: end;
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */
