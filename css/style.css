@@ -1,0 +1,513 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.Headercontanier {
+  background-color: #014e56;
+  background-image: url(../img/headerimg\ bottom.png), url(../img/intro-left-bg\ \(1\).png);
+  background-repeat: no-repeat;
+  background-position: right bottom, left center;
+}
+
+.manageContanier {
+  background-color: #012F34;
+  background-image: url(../img/build-right-bg.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.resultContanier {
+  background-color: #004047;
+  background-image: url(../img/result_right.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.readyContanier {
+  background-color: #F67E7E;
+  background-image: url(../img/readyimg.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.footerContanier {
+  background-color: #002529;
+}
+
+@media only screen and (max-width: 1100px) {
+  .Headercontanier {
+    background-image: url(../img/introimg2.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+  .manageContanier {
+    background-image: url(../img/build-right-bg.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+}
+.navbar {
+  width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  margin-top: 75px;
+}
+.navbar_logo {
+  width: 160px;
+}
+.navbar_left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.navbar_right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar_list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.navbar_link {
+  /* home */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  color: #ffffff;
+}
+.navbar_btn {
+  /* Group 6 */
+  width: 153px;
+  height: 48px;
+  /* Rectangle */
+  box-sizing: border-box;
+  border: 2px solid #ffffff;
+  border-radius: 24px;
+  /* contact us */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  color: #ffffff;
+  transition: all 0.3s linear;
+}
+.navbar_btn:hover {
+  background-color: inherit;
+  color: chocolate;
+}
+.navbar_burger {
+  display: none;
+  flex-direction: column;
+  gap: 3px;
+}
+.navbar_sircle {
+  width: 20px;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1100px) {
+  .navbar {
+    width: 90%;
+  }
+  .navbar_btn {
+    display: none;
+  }
+  .navbar_right {
+    justify-content: space-between;
+  }
+  .navbar_list {
+    display: none;
+  }
+  .navbar_burger {
+    display: flex;
+  }
+  .navbar_logo {
+    width: 128px;
+  }
+}
+.intro {
+  width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+}
+.intro_title {
+  /* Find the best talent */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  /* or 100% */
+  color: #ffffff;
+}
+.intro_span {
+  color: #f67e7e;
+}
+.intro_hr {
+  width: 48.5px;
+  margin-bottom: 30px;
+}
+.intro_text {
+  /* Finding the right pe */
+  width: 430px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1100px) {
+  .intro {
+    width: 90%;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .intro_title {
+    /* Find the best talent */
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    /* or 100% */
+    text-align: center;
+    color: #ffffff;
+  }
+  .intro_hr {
+    display: none;
+  }
+  .intro_text {
+    /* Finding the right pe */
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+    /* or 187% */
+    text-align: center;
+    color: #ffffff;
+  }
+}
+.manage {
+  width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  margin: auto;
+}
+.manage_left {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-right: 70px;
+}
+.manage_title {
+  /* Build & manage distr */
+  width: 400px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  /* or 100% */
+  color: #ffffff;
+}
+.manage_hr {
+  width: 50px;
+}
+.manage_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  margin-left: 70px;
+}
+.manage_topic {
+  /* Experienced Individu */
+  width: 445px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  color: #f67e7e;
+}
+.manage_text {
+  /* Our network is made */
+  width: 400px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+.manage .coupel {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .manage {
+    width: 90%;
+    flex-direction: column;
+  }
+  .manage_title {
+    /* Build & manage distr */
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    /* or 100% */
+    color: #ffffff;
+  }
+  .manage_topic {
+    /* Experienced Individu */
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    text-align: center;
+    color: #f67e7e;
+  }
+  .manage_text {
+    /* Our network is made */
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+    text-align: center;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+}
+.result {
+  width: 1100px;
+  padding: 80px;
+  margin: auto;
+}
+.result_title {
+  /* Delivering real resu */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  /* or 100% */
+  text-align: center;
+  color: #ffffff;
+}
+.result_spn {
+  color: #79c8c7;
+}
+.result_cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.result_card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.result_text {
+  /* “The team perfectly */
+  width: 350px;
+  z-index: 2;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+  text-align: center;
+  color: #ffffff;
+}
+.result_nicname {
+  /* Aiysha Reese */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  text-align: center;
+  color: #79c8c7;
+}
+.result_bio {
+  /* Co-founder of MyPhys */
+  font-family: "Livvic";
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height, or 138% */
+  text-align: center;
+  color: #ffffff;
+}
+.result_backimg {
+  width: 64px;
+  position: absolute;
+  top: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ready {
+  width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  margin: auto;
+}
+.ready_title {
+  /* Ready to get started */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  /* identical to box height, or 100% */
+  color: #012f34;
+}
+.ready_btn {
+  width: 153px;
+  height: 48px;
+  /* Rectangle */
+  box-sizing: border-box;
+  border: 2px solid #ffffff;
+  border-radius: 24px;
+  /* contact us */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  color: #ffffff;
+  transition: all 0.3s linear;
+}
+.ready_btn:hover {
+  background-color: inherit;
+  color: chocolate;
+}
+
+.footer {
+  width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  margin: auto;
+}
+.footer_left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.footer_div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer_list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.footer_link {
+  /* home */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  color: #ffffff;
+}
+.footer_text {
+  /* 987 Hillcrest Lane I */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.footer_right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.footer_data {
+  /* Copyright 2020. All */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  /* identical to box height, or 167% */
+  text-align: right;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.footer_app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}/*# sourceMappingURL=style.css.map */

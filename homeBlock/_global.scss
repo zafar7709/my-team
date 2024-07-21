@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.Headercontanier {
+  background-color: #014e56;
+  background-image: url(../img/headerimg\ bottom.png) , url(../img/intro-left-bg\ \(1\).png);
+  background-repeat: no-repeat;
+  background-position: right bottom , left center;
+}
+.manageContanier{
+  background-color: #012F34;
+  background-image: url(../img/build-right-bg.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.resultContanier{
+  background-color: #004047;
+  background-image: url(../img/result_right.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.readyContanier{
+  background-color: #F67E7E;
+  background-image: url(../img/readyimg.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.footerContanier{
+  background-color: #002529;
+}
+
+@media only screen and (max-width:1100px){
+  .Headercontanier{
+    background-image: url(../img/introimg2.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+  .manageContanier{
+    background-image: url(../img/build-right-bg.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+}

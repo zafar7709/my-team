@@ -1,0 +1,49 @@
+.ready {
+  width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  margin: auto;
+
+  &_title {
+    /* Ready to get started */
+
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    /* identical to box height, or 100% */
+
+    color: #012f34;
+  }
+  &_btn{
+    
+    width: 153px;
+    height: 48px;
+
+    /* Rectangle */
+
+    box-sizing: border-box;
+
+    border: 2px solid #ffffff;
+    border-radius: 24px;
+
+    /* contact us */
+
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+
+    color: #ffffff;
+    transition: all 0.3s linear;
+    &:hover {
+      background-color: inherit;
+      color: chocolate;
+    }
+  }
+}

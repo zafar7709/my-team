@@ -1,0 +1,117 @@
+.manage {
+  width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  margin: auto;
+
+  &_left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-right: 70px;
+  }
+  &_title {
+    /* Build & manage distr */
+    width: 400px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    /* or 100% */
+
+    color: #ffffff;
+  }
+  &_hr {
+    width: 50px;
+  }
+  &_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 70px;
+  }
+  &_topic {
+    /* Experienced Individu */
+    width: 445px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+
+    color: #f67e7e;
+  }
+  &_text {
+    /* Our network is made */
+    width: 400px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+
+    color: #ffffff;
+
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+  .coupel {
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .manage {
+    width: 90%;
+      flex-direction: column;
+    &_title {
+      /* Build & manage distr */
+      font-family: "Livvic";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 32px;
+      /* or 100% */
+
+      color: #ffffff;
+    }
+    &_topic {
+      /* Experienced Individu */
+
+      font-family: "Livvic";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+      /* identical to box height, or 156% */
+      text-align: center;
+
+      color: #f67e7e;
+    }
+    &_text {
+      /* Our network is made */
+      font-family: "Livvic";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 25px;
+      /* or 167% */
+      text-align: center;
+
+      color: #ffffff;
+
+      mix-blend-mode: normal;
+      opacity: 0.8;
+    }
+  }
+}

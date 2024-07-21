@@ -1,0 +1,82 @@
+.footer {
+  width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  margin: auto;
+
+  &_left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  &_div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &_list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  &_link {
+    /* home */
+
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+
+    color: #ffffff;
+  }
+  &_text {
+    /* 987 Hillcrest Lane I */
+
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+
+    color: #ffffff;
+
+    mix-blend-mode: normal;
+    opacity: 0.6;
+  }
+  &_right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+  &_data {
+    /* Copyright 2020. All */
+
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    /* identical to box height, or 167% */
+    text-align: right;
+
+    color: #ffffff;
+
+    mix-blend-mode: normal;
+    opacity: 0.6;
+  }
+  &_app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+    
+}

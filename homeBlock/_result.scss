@@ -1,0 +1,80 @@
+.result {
+  width: 1100px;
+  padding: 80px;
+  margin: auto;
+
+  &_title {
+    /* Delivering real resu */
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    /* or 100% */
+    text-align: center;
+
+    color: #ffffff;
+  }
+  &_spn {
+    color: #79c8c7;
+  }
+  &_cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  &_card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &_text {
+    /* “The team perfectly */
+    width: 350px;
+    z-index: 2;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+    text-align: center;
+
+    color: #ffffff;
+  }
+  &_nicname {
+    /* Aiysha Reese */
+
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    text-align: center;
+
+    color: #79c8c7;
+  }
+  &_bio {
+    /* Co-founder of MyPhys */
+
+    font-family: "Livvic";
+    font-size: 13px;
+    line-height: 18px;
+    /* identical to box height, or 138% */
+    text-align: center;
+
+    color: #ffffff;
+  }
+  &_backimg{
+    width: 64px;
+    position: absolute;
+    top: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

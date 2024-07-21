@@ -1,0 +1,78 @@
+.intro {
+  width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+
+  &_title {
+    /* Find the best talent */
+
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100px;
+    /* or 100% */
+
+    color: #ffffff;
+  }
+  &_span {
+    color: #f67e7e;
+  }
+  &_hr {
+    width: 48.5px;
+    margin-bottom: 30px;
+  }
+  &_text {
+    /* Finding the right pe */
+    width: 430px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+
+    color: #ffffff;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .intro {
+    width: 90%;
+    flex-direction: column;
+    gap: 50px;
+    &_title {
+      /* Find the best talent */
+
+      font-family: "Livvic";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 40px;
+      /* or 100% */
+      text-align: center;
+
+      color: #ffffff;
+    }
+    &_hr{
+      display: none;
+    }
+    &_text {
+      /* Finding the right pe */
+
+      font-family: "Livvic";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 28px;
+      /* or 187% */
+      text-align: center;
+
+      color: #ffffff;
+      
+    }
+  }
+}
